@@ -12,19 +12,19 @@ let user;
 let pass;
 
 if (process.env.NODE_ENV !== 'production') {
-  host = 'smtp.mailtrap.io';
-  port = 2525;
+  host = 'smtp-relay.sendinblue.com';
+  port = 587;
   user = process.env.MAIL_TRAP_USERNAME;
   pass = process.env.MAIL_TRAP_PASSWORD;
 } else {
-  host = 'smtp.mailtrap.io';
-  port = 2525;
-  user = process.env.MAIL_TRAP_USERNAME;
-  pass = process.env.MAIL_TRAP_PASSWORD;
-  //host = 'smtp-relay.sendinblue.com';
-  //port = 587;
-  //user = process.env.SendInBlue_User;
-  //pass = process.env.SendInBlue_Password;
+  // host = 'smtp.mailtrap.io';
+  // port = 2525;
+  // user = process.env.MAIL_TRAP_USERNAME;
+  // pass = process.env.MAIL_TRAP_PASSWORD;
+  host = 'smtp-relay.sendinblue.com';
+  port = 587;
+  user = process.env.SendInBlue_User;
+  pass = process.env.SendInBlue_Password;
 }
 
 let transport = nodemailer.createTransport({

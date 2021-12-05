@@ -1,6 +1,6 @@
 import { sendEmail } from '../../Config/email.js';
-import { getUser } from '../../Model/sql/auth/authentication.js';
-import { getAppUsersModel, CreateInvite, VerifyInviteModel } from '../../Model/sql/users/users.js';
+import { getUser } from '../../Model/mongo/auth/authentication.js';
+import { getAppUsersModel, CreateInvite, VerifyInviteModel } from '../../Model/mongo/users/users.js';
 import { nanoid } from 'nanoid';
 
 export const GetAppUsers = async (req, res) => {
@@ -40,7 +40,7 @@ export const InviteUser = async (req, res) => {
   let template = 'invite';
   let locals = { sender_email, sender_display_name, redirectUrl, isSignup };
 
-  await sendEmail(recipient_email, template, locals);
+  //await sendEmail(recipient_email, template, locals);
   res.status(200).send({ type: 'Success', message: 'Invite successfully sent' });
 };
 

@@ -3,16 +3,16 @@ import firebaseAdmin from '../../Config/firebase.js';
 import { sendEmail } from '../../Config/email.js';
 import { UpdateStripeCustomer } from '../stripe/stripeCustomer.js';
 import { UpdateContact } from '../users/contacts.js';
-import { verifyUser } from '../../Model/sql/auth/authentication.js';
+import { verifyUser } from '../../Model/mongo/auth/authentication.js';
 import { CreateContact } from '../users/contacts.js';
 import { nanoid } from 'nanoid';
-import { GetOrgsbyEmail } from '../../Model/sql/org/org.js';
+import { GetOrgsbyEmail } from '../../Model/mongo/org/org.js';
 import {
   saveUsertoDB,
   getUser,
   updateUsernameModel,
   updateEmailModel
-} from '../../Model/sql/auth/authentication.js';
+} from '../../Model/mongo/auth/authentication.js';
 
 export const CreateUser = async (req, res) => {
   let verify_key = req.body.verify_key;
@@ -30,7 +30,7 @@ export const CreateUser = async (req, res) => {
   //send welcome email
   let template = 'welcome';
   let locals = { FIRSTNAME };
-  await sendEmail(email, template, locals);
+  //await sendEmail(email, template, locals);
 
   res.send({ token: setToken(user_id), user_id, username, email });
 };
@@ -66,7 +66,7 @@ export const SignUp = async (req, res) => {
   //send verification email
   let template = 'verify email';
   let locals = { confirmEmailUrl, username };
-  await sendEmail(email, template, locals);
+  //await sendEmail(email, template, locals);
 
   //save user firebase info to our own db, and get unique user database id
   await saveUsertoDB(email, username, firebaseId, randomBytes);
@@ -94,7 +94,7 @@ export const Login = async (req, res) => {
   }
 
   let user_id = user.id;
-
+  console.log(user_id)
   res.send({ token: setToken(user_id) });
 };
 

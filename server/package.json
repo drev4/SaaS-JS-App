@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./server.js",
+    "start": "node ./server.js cross-env DEBUG=fibonacci:* mocha --reporter spec",
     "test": "jest --detectOpenHandles --runInBand"
   },
   "dependencies": {

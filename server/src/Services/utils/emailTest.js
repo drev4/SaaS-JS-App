@@ -6,9 +6,9 @@ import nodemailer from 'nodemailer';
 */
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.mailtrap.io',
+  host: 'smtp-relay.sendinblue.com',
   //host: 'localhost',
-  port: 465,
+  port: 587,
   auth: {
     user: process.env.MAIL_TRAP_USERNAME,
     pass: process.env.MAIL_TRAP_PASSWORD

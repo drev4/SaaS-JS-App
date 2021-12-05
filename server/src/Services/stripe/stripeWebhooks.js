@@ -1,6 +1,6 @@
 import { sendEmail } from '../../Config/email.js';
 import { GetStripeCustomer } from '../../Services/stripe/stripeCustomer.js';
-import { CancelPlanbySubId } from '../../Model/sql/org/org.js';
+import { CancelPlanbySubId } from '../../Model/mongo/org/org.js';
 
 export const TrailWillEnd = async (event) => {
   let customer = event.data.object.customer;

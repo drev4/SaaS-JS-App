@@ -62,8 +62,8 @@ const Signup = () => {
       .createUserWithEmailAndPassword(email, password)
       .catch((error) => {
         fetchFailure(error);
+        console.log(error)
       });
-
     SignupAuth(
       authRes,
       firebase,
