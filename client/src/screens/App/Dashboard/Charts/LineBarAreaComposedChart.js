@@ -69,15 +69,12 @@ const LineBarAreaComposedChart = () => (
         height={400}
         data={data}
         margin={{
-          top: 20,
-          right: 20,
-          bottom: 20,
-          left: 20
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0
         }}
       >
-        <CartesianGrid stroke="#f5f5f5" />
-        <XAxis dataKey="name" />
-        <YAxis />
         <Tooltip />
         <Legend />
         <Area type="monotone" dataKey="amt" fill="#8884d8" stroke="#8884d8" />

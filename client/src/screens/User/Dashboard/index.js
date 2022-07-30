@@ -146,7 +146,7 @@ const Dashboard = () => {
         <StyledHeader>Dashboard</StyledHeader>
         <ContentWrapper>
           <AppsSection>
-            <h2>My Orgs:</h2>
+            <h2>My Organizations:</h2>
             <AppsWrapper>
               {!orgs.length == 0 ? (
                 orgs.map((org) => (
@@ -165,19 +165,22 @@ const Dashboard = () => {
               )}
             </AppsWrapper>
           </AppsSection>
-          <CreateAppWrapper>
-            <h2>Create Org:</h2>
-            <form onSubmit={postOrg}>
-              <StyledCard>
-                <TextInputWrapper>
-                  <FieldLabel htmlFor="name">
-                    Create: <TextInput type="text" name="name" />
-                  </FieldLabel>
-                </TextInputWrapper>
-                <Button type="submit">Save</Button>
-              </StyledCard>
-            </form>
-          </CreateAppWrapper>
+          {orgs.length == 0 ?
+              <CreateAppWrapper>
+                <h2>Create Org:</h2>
+                <form onSubmit={postOrg}>
+                  <StyledCard>
+                    <TextInputWrapper>
+                      <FieldLabel htmlFor="name">
+                        Create: <TextInput type="text" name="name" />
+                      </FieldLabel>
+                    </TextInputWrapper>
+                    <Button type="submit">Save</Button>
+                  </StyledCard>
+                </form>
+              </CreateAppWrapper>
+              :  <div/>
+          }
         </ContentWrapper>
       </div>
     </React.Fragment>

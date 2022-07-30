@@ -17,7 +17,7 @@ const Card = styled.div`
   overflow: hidden;
   border-radius: 0.5rem;
   margin-top: 1.25rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   @media (min-width: ${breakpoints.medium}) {

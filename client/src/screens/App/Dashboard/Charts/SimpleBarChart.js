@@ -60,25 +60,22 @@ const data = [
 const SimpleBarChart = () => (
   <ChartCard>
     <ChartTitle>Simple Bar Chart</ChartTitle>
-    <ResponsiveContainer width="99%" height="280px" aspect="2">
+    <ResponsiveContainer width="99%" height="90%">
       <BarChart
         width={500}
         height={300}
         data={data}
         margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5
+          top: 0,
+          right: 0,
+          left: 0,
+          bottom: 0
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
+
         <Tooltip />
-        <Legend />
-        <Bar dataKey="pv" fill="#8884d8" />
-        <Bar dataKey="uv" fill="#82ca9d" />
+        <Bar dataKey="pv" fill="#7B31E8" />
+        <Bar dataKey="uv" fill="#4D33F2" />
       </BarChart>
     </ResponsiveContainer>
   </ChartCard>

@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42db8360-f7fc-4fea-86d4-03ad407da77b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/screens/Auth/Signup/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/Auth/Signup/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/siteMetadata.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/siteMetadata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Config/email.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Config/email.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Database/mongo/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Database/mongo/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/auth/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/auth/authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/org/org.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/org/org.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/roles/roles.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/roles/roles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/stripe/stripeSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/stripe/stripeSubscription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/stripe/stripeWebhooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/stripe/stripeWebhooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/todos/todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/todos/todos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/users/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/users/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Services/utils/emailTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Services/utils/emailTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/AreaChartFillByValue.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/AreaChartFillByValue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/ChartCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/ChartCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/LineBarAreaComposedChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/LineBarAreaComposedChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/SimpleBarChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/SimpleBarChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/StackedChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/StackedChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/desktopActivityList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/desktopActivityList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/App/Dashboard/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/App/Dashboard/stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/User/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/User/Dashboard/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SoftwareDev/react-app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\David\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.7660.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -54,6 +48,10 @@
       <updated>1638036292113</updated>
       <workItem from="1638036293434" duration="13115000" />
       <workItem from="1638708913367" duration="625000" />
+      <workItem from="1638711728010" duration="15708000" />
+      <workItem from="1638811458178" duration="1948000" />
+      <workItem from="1640538351861" duration="2000" />
+      <workItem from="1653598298084" duration="71000" />
     </task>
     <servers />
   </component>
@@ -61,25 +59,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1763" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1638043057289">
+    <state x="717" y="455" key="FileChooserDialogImpl" timestamp="1653598374264">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1763" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1638043057289" />
-    <state x="1769" y="458" key="FileChooserDialogImpl" timestamp="1638037641843">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="1769" y="458" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1638037641843" />
-    <state x="1490" y="348" key="SettingsEditor" timestamp="1638038935315">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="1490" y="348" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1638038935315" />
-    <state x="1376" y="330" key="run.anything.popup" timestamp="1638709290493">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="1376" y="330" key="run.anything.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1638709290493" />
-    <state x="1652" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1638053522779">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="1652" y="320" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1638053522779" />
+    <state x="717" y="455" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1653598374264" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/StackedChart.js</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/screens/App/Dashboard/Charts/StackedChart.js</url>
+          <line>81</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

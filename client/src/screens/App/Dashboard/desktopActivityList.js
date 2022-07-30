@@ -13,7 +13,8 @@ const Wrapper = styled.div`
   vertical-align: middle;
   min-width: 100%;
   overflow-x: auto;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
   overflow: hidden;
 `;
 

@@ -26,15 +26,31 @@ const ChartsContainer = styled.div`
   grid-column-gap: 2rem;
   margin-top: 2rem;
 `;
-
+const SingleChartContainer = styled.div`
+    display: grid;
+  grid-template-columns: 1fr;
+  @media (max-width: ${breakpoints.large}) {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  grid-auto-flow: row;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+`
+const divStyle = {
+    maxWidth: '1440px',
+    margin: '0 auto'
+}
 const Dashboard = () => {
   return (
-    <div>
-      <Title>Dashboard</Title>
+    <div style={divStyle}>
+      <Title>Sales</Title>
       <Stats />
-      <ChartsContainer>
-        <LineBarAreaComposedChart />
+      <SingleChartContainer>
         <StackedChart />
+      </SingleChartContainer>
+        <ChartsContainer>
         <AreaChartFillByValue />
         <SimpleBarChart />
       </ChartsContainer>

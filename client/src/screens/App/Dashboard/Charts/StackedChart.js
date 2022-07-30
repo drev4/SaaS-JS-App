@@ -57,29 +57,33 @@ const data = [
     amt: 2100
   }
 ];
-
+const tooltipStyle = {
+  borderRadius: '10px',
+  border: 'none',
+  boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+};
+const testing = (value) => {
+  return data[value].name
+}
 const StackedChart = () => (
   <ChartCard>
     <ChartTitle>Stacked Area Chart</ChartTitle>
-    <ResponsiveContainer width="99%" height="280px" aspect="2">
+    <ResponsiveContainer  width="99%" height="90%">
       <AreaChart
         width={500}
         height={400}
         data={data}
         margin={{
-          top: 10,
-          right: 30,
+          top: 0,
+          right: 0,
           left: 0,
           bottom: 0
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Area type="monotone" dataKey="uv" stackId="1" stroke="#8884d8" fill="#8884d8" />
-        <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-        <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
+        <Tooltip contentStyle={tooltipStyle} labelFormatter={testing}/>
+        <Area type="monotone" dataKey="uv" stackId="1" stroke="#7B31E8" fill="#7B31E8" />
+        <Area type="monotone" dataKey="pv" stackId="1" stroke="#4D33F2" fill="#4D33F2" />
+        <Area type="monotone" dataKey="amt" stackId="1" stroke="#337FF2" fill="#337FF2" />
       </AreaChart>
     </ResponsiveContainer>
   </ChartCard>
